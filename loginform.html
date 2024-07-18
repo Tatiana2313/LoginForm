@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №22</title>
+    <link rel="icon" type="image/x-icon" href="icon-internet.ico">
+    <link rel="stylesheet" href="styleform.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-login">
+            <div class="wrap-login">
+                <div class="login-pic">
+					<img src="img-01.png" alt="image">
+				</div>
+                <form id="loginForm">
+                    <span class="title">Логин</span>
+                    <div id="messangess"></div>
+                    <div class="wrap-input">
+						<input type="text" id="login" placeholder="Логин*">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input">
+						<input type="password" id="pasword" placeholder="Пароль*" minlength="4" maxlength="8">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input">
+						<input type="password" id="confirmpasword" placeholder="Подтвердите пароль*">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input">
+						<input type="text" id="email" placeholder="Email адрес*">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input">
+                        <label for="display-email">Показывать Email:<span>*</span></label>
+                        <select id="display-email">
+                            <option value="No one">Никому</option>
+                            <option value="Everyone">Всем</option>
+                            <option value="Only authorized">Только авторизированным</option>
+                        </select>
+                    </div>
+                    <div class="wrap-input">
+						<input type="text" id="phone" placeholder="Телефон">
+						<span class="focus-input"></span>
+						<span class="symbol-input">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</span>
+					</div>
+                    <div class="wrap-input">
+                        <label for="about">О себе:<span>*</span></label>
+                        <textarea cols="35" rows="7" id="about"></textarea>
+                    </div>
+                    <div class="wrap-input">
+                        <div class="flex-container">
+                            <label for="about">Получать рассылку:</label>
+                            <label class="check">
+                                <input type="checkbox" id="link">
+                                <div class="checkmark"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <input type="submit" value="Отправить" class="button">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
